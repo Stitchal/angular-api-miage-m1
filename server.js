@@ -2,7 +2,6 @@ let express = require('express');
 let app = express();
 let bodyParser = require('body-parser');
 let assignment = require('./routes/assignments');
-require('dotenv').config();
 
 let mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -10,7 +9,7 @@ mongoose.set('debug', true);
 
 // remplacer toute cette chaine par l'URI de connexion à votre propre base dans le cloud s
 
-const uri = process.env.MONGODB_URI;
+const uri = "mongodb+srv://arosset:k2YiQoI2KdfITL4F@cluster0.3c5rt.mongodb.net/assignmentsDB?retryWrites=true&w=majority&ssl=true";
 
 const options = {
   useNewUrlParser: true,
