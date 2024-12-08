@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "npm i && npm install -g @angular/cli && ng build"
+    "start": "node server.js"
   },
   "author": "Sam Orgill",
   "license": "ISC",
